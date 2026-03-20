@@ -7,21 +7,22 @@ from Parser import Parser
 from Passage import Passage
 
 
+if __name__ == "__main__":
 
-for i in range(1,len(sys.argv)):
+	for i in range(1,len(sys.argv)):
 
-    code=sys.argv[i]
+		code=sys.argv[i]
 
-    tokens=Lexer.lex(code)
+		tokens=Lexer.lex(code)
 
-    cites=Parser(tokens).parse()
+		cites=Parser(tokens).parse()
 
-    passages=[]
-    for cite in cites:
-        if cite:
-            passages.extend(Passage.find(cite))
+		passages=[]
+		for cite in cites:
+		    if cite:
+		        passages.extend(Passage.find(cite))
 
-    print()
-    for passage in passages:
-        print(passage)
-        print()
+		print()
+		for passage in passages:
+		    print(passage)
+		    print()

@@ -22,11 +22,12 @@ class Passage:
         	for chap in book.findall("CHAPTER"):
         		for vers in chap.findall("VERS"):
         			bname=book.get("bname")
+        			bsname=book.get("bsname")
         			cnum=int(chap.get("cnumber"))
         			vnum=int(vers.get("vnumber"))
         			text=vers.text
 
-        			if bname.lower() == cite.bname.lower() and cnum>=cite.scnum and cnum<=cite.ecnum and ((vnum>=cite.svnum and vnum<=cite.evnum) or (cite.svnum==0 and cite.evnum==0)):
+        			if (bname.lower() == cite.bname.lower() or bsname.lower() == cite.bsname.lower()) and cnum>=cite.scnum and cnum<=cite.ecnum and ((vnum>=cite.svnum and vnum<=cite.evnum) or (cite.svnum==0 and cite.evnum==0)):
         			    passages.append(Passage(bname,cnum,vnum,text))
 
         return passages

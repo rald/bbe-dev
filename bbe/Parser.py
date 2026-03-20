@@ -8,6 +8,7 @@ class Parser:
         self.i=0
 
         self.bname=None
+        self.bsname=None
         self.scnum=None
         self.ecnum=None
         self.svnum=None
@@ -31,7 +32,7 @@ class Parser:
             else:
                 self.evnum=self.svnum
 
-        return Cite(self.bname,self.scnum,self.ecnum,self.svnum,self.evnum)
+        return Cite(self.bname,self.bsname,self.scnum,self.ecnum,self.svnum,self.evnum)
 
     def p7(self):
         if self.tokens[self.i].type==TokenType.NUMBER:
@@ -83,13 +84,16 @@ class Parser:
     def p1(self):
         if self.tokens[self.i].type==TokenType.STRING:
             self.bname=self.tokens[self.i].text
+            self.bsname=self.tokens[self.i].text
             self.i+=1
             return self.p2()
         elif self.tokens[self.i].type==TokenType.NUMBER:
             self.bname=self.tokens[self.i].text+" "
+            self.bsname=self.tokens[self.i].text
             self.i+=1
             if self.tokens[self.i].type==TokenType.STRING:
                 self.bname+=self.tokens[self.i].text
+                self.bsname+=self.tokens[self.i].text
                 self.i+=1
                 return self.p2()
         return None

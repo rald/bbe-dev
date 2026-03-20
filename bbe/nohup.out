@@ -1,0 +1,2418 @@
+DEBUG:irc.client:connect(server='irc.undernet.org', port=6667, nickname='frio', ...)
+DEBUG:irc.client:TO SERVER: NICK frio
+DEBUG:irc.client:TO SERVER: USER frio 0 * :frio
+DEBUG:irc.client:process_forever(timeout=0.2)
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Looking up your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Looking up your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Checking Ident
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Checking Ident'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: PING :3572053060
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: 3572053060, arguments: ['3572053060'], tags: None
+DEBUG:irc.client:TO SERVER: PONG 3572053060
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Got ident response
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Got ident response'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Found your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Found your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 001 frio :Welcome to the UnderNet IRC Network, frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: welcome, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Welcome to the UnderNet IRC Network, frio'], tags: None
+DEBUG:irc.client:_dispatcher: welcome
+DEBUG:irc.client:TO SERVER: JOIN #pantasya
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 002 frio :Your host is dallas.tx.us.undernet.org, running version u2.10.12.19
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: yourhost, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Your host is dallas.tx.us.undernet.org, running version u2.10.12.19'], tags: None
+DEBUG:irc.client:_dispatcher: yourhost
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 003 frio :This server was created Sat Feb 28 2026 at 11:54:39 EST
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: created, source: dallas.tx.us.undernet.org, target: frio, arguments: ['This server was created Sat Feb 28 2026 at 11:54:39 EST'], tags: None
+DEBUG:irc.client:_dispatcher: created
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 004 frio dallas.tx.us.undernet.org u2.10.12.19 diOoswkgx biklmnopstvrDdRcCPM bklov
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: myinfo, source: dallas.tx.us.undernet.org, target: frio, arguments: ['dallas.tx.us.undernet.org', 'u2.10.12.19', 'diOoswkgx', 'biklmnopstvrDdRcCPM', 'bklov'], tags: None
+DEBUG:irc.client:_dispatcher: myinfo
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=60 MAXBANS=100 NICKLEN=12 :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['WHOX', 'WALLCHOPS', 'WALLVOICES', 'USERIP', 'CPRIVMSG', 'CNOTICE', 'SILENCE=25', 'MODES=6', 'MAXCHANNELS=60', 'MAXBANS=100', 'NICKLEN=12', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcCPM CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['MAXNICKLEN=15', 'TOPICLEN=160', 'AWAYLEN=160', 'KICKLEN=160', 'CHANNELLEN=200', 'MAXCHANNELLEN=200', 'CHANTYPES=#&', 'PREFIX=(ov)@+', 'STATUSMSG=@+', 'CHANMODES=b,k,l,imnpstrDdRcCPM', 'CASEMAPPING=rfc1459', 'NETWORK=UnderNet', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 251 frio :There are 4996 users and 13851 invisible on 38 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserclient, source: dallas.tx.us.undernet.org, target: frio, arguments: ['There are 4996 users and 13851 invisible on 38 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserclient
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 252 frio 39 :operator(s) online
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserop, source: dallas.tx.us.undernet.org, target: frio, arguments: ['39', 'operator(s) online'], tags: None
+DEBUG:irc.client:_dispatcher: luserop
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 253 frio 11 :unknown connection(s)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserunknown, source: dallas.tx.us.undernet.org, target: frio, arguments: ['11', 'unknown connection(s)'], tags: None
+DEBUG:irc.client:_dispatcher: luserunknown
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 254 frio 5652 :channels formed
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserchannels, source: dallas.tx.us.undernet.org, target: frio, arguments: ['5652', 'channels formed'], tags: None
+DEBUG:irc.client:_dispatcher: luserchannels
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 255 frio :I have 1473 clients and 1 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserme, source: dallas.tx.us.undernet.org, target: frio, arguments: ['I have 1473 clients and 1 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserme
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :Highest connection count: 2803 (2803 clients)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Highest connection count: 2803 (2803 clients)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 375 frio :- dallas.tx.us.undernet.org Message of the Day - 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motdstart, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- dallas.tx.us.undernet.org Message of the Day - '], tags: None
+DEBUG:irc.client:_dispatcher: motdstart
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 2026-2-28 12:00
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 2026-2-28 12:00'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- SPONSORED BY
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- SPONSORED BY'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888P"      "Y88b.    888     888        888    888    d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888P"      "Y88b.    888     888        888    888    d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888              "888    888     888    888 888    888   d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888              "888    888     888    888 888    888   d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-                           NETWORKS
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-                           NETWORKS'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- Dedicated / Colocation Solutions / Private Cloud and MORE
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- Dedicated / Colocation Solutions / Private Cloud and MORE'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-               Website: https://www.psychz.net/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-               Website: https://www.psychz.net/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The use of this server & network is a privilege,not a right.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The use of this server & network is a privilege,not a right.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The network operators may deny network access to anyone,
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The network operators may deny network access to anyone,'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- for any reason,at their sole discretion.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- for any reason,at their sole discretion.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- -= Welcome to dallas.tx.us.undernet.org =-
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- -= Welcome to dallas.tx.us.undernet.org =-'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########### Network Info ##############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########### Network Info ##############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-             WEBSITES
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-             WEBSITES'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Official Website: http://www.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Official Website: http://www.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Users Committee: http://www.user-com.undernet.org/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Users Committee: http://www.user-com.undernet.org/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Channel Services: http://cservice.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Channel Services: http://cservice.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########## Useful Channels ############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########## Useful Channels ############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Psychz : Our sponsor channel.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Psychz : Our sponsor channel.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #CService : Official X Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #CService : Official X Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Usernames : Usernames Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Usernames : Usernames Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Help : General IRC Questions / IRC Operator Assistance
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Help : General IRC Questions / IRC Operator Assistance'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Undernet : User-Com Chat Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Undernet : User-Com Chat Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Ayuda : Spanish help channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Ayuda : Spanish help channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      For Information regarding G-Lines / K-lines email abuse@undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      For Information regarding G-Lines / K-lines email abuse@undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ############ Server Guidelines ###########
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ############ Server Guidelines ###########'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No flooding channels, users, staff members, or spamming.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No flooding channels, users, staff members, or spamming.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No distribution of copyrighted material or pornography.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No distribution of copyrighted material or pornography.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No clones.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No clones.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No channel takeovers.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No channel takeovers.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No attempts to disrupt network services.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No attempts to disrupt network services.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No spamming and/or advertising.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No spamming and/or advertising.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No advertising other IRC networks
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No advertising other IRC networks'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 376 frio :End of /MOTD command.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofmotd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['End of /MOTD command.'], tags: None
+DEBUG:irc.client:_dispatcher: endofmotd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :on 1 ca 2(4) ft 10(10)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['on 1 ca 2(4) ft 10(10)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :frio!fria@hub.homegymstud.io JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: frio!fria@hub.homegymstud.io, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 353 frio = #pantasya :frio @fria
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: namreply, source: dallas.tx.us.undernet.org, target: frio, arguments: ['=', '#pantasya', 'frio @fria'], tags: None
+DEBUG:irc.client:_dispatcher: namreply
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 366 frio #pantasya :End of /NAMES list.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofnames, source: dallas.tx.us.undernet.org, target: frio, arguments: ['#pantasya', 'End of /NAMES list.'], tags: None
+DEBUG:irc.client:_dispatcher: endofnames
+Traceback (most recent call last):
+  File "/home/fria/bbe/./bot.py", line 95, in <module>
+    main()
+    ~~~~^^
+  File "/home/fria/bbe/./bot.py", line 91, in main
+    bot.start()
+    ~~~~~~~~~^^
+  File "/home/fria/bbe/.venv/lib/python3.13/site-packages/irc/bot.py", line 347, in start
+    super().start()
+    ~~~~~~~~~~~~~^^
+  File "/home/fria/bbe/.venv/lib/python3.13/site-packages/irc/client.py", line 1268, in start
+    self.reactor.process_forever()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/fria/bbe/.venv/lib/python3.13/site-packages/irc/client.py", line 910, in process_forever
+    consume(repeatfunc(one))
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/fria/bbe/.venv/lib/python3.13/site-packages/more_itertools/recipes.py", line 204, in consume
+    deque(iterator, maxlen=0)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/fria/bbe/.venv/lib/python3.13/site-packages/irc/client.py", line 890, in process_once
+    in_, out, err = select.select(sockets, [], [], timeout)
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+DEBUG:irc.client:connect(server='irc.undernet.org', port=6667, nickname='frio', ...)
+DEBUG:irc.client:TO SERVER: NICK frio
+DEBUG:irc.client:TO SERVER: USER frio 0 * :frio
+DEBUG:irc.client:process_forever(timeout=0.2)
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Looking up your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Looking up your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Checking Ident
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Checking Ident'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: PING :4071400483
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: 4071400483, arguments: ['4071400483'], tags: None
+DEBUG:irc.client:TO SERVER: PONG 4071400483
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Found your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Found your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Got ident response
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Got ident response'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 001 frio :Welcome to the UnderNet IRC Network, frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: welcome, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Welcome to the UnderNet IRC Network, frio'], tags: None
+DEBUG:irc.client:_dispatcher: welcome
+DEBUG:irc.client:TO SERVER: JOIN #pantasya
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 002 frio :Your host is dallas.tx.us.undernet.org, running version u2.10.12.19
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: yourhost, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Your host is dallas.tx.us.undernet.org, running version u2.10.12.19'], tags: None
+DEBUG:irc.client:_dispatcher: yourhost
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 003 frio :This server was created Sat Feb 28 2026 at 11:54:39 EST
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: created, source: dallas.tx.us.undernet.org, target: frio, arguments: ['This server was created Sat Feb 28 2026 at 11:54:39 EST'], tags: None
+DEBUG:irc.client:_dispatcher: created
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 004 frio dallas.tx.us.undernet.org u2.10.12.19 diOoswkgx biklmnopstvrDdRcCPM bklov
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: myinfo, source: dallas.tx.us.undernet.org, target: frio, arguments: ['dallas.tx.us.undernet.org', 'u2.10.12.19', 'diOoswkgx', 'biklmnopstvrDdRcCPM', 'bklov'], tags: None
+DEBUG:irc.client:_dispatcher: myinfo
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=60 MAXBANS=100 NICKLEN=12 :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['WHOX', 'WALLCHOPS', 'WALLVOICES', 'USERIP', 'CPRIVMSG', 'CNOTICE', 'SILENCE=25', 'MODES=6', 'MAXCHANNELS=60', 'MAXBANS=100', 'NICKLEN=12', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcCPM CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['MAXNICKLEN=15', 'TOPICLEN=160', 'AWAYLEN=160', 'KICKLEN=160', 'CHANNELLEN=200', 'MAXCHANNELLEN=200', 'CHANTYPES=#&', 'PREFIX=(ov)@+', 'STATUSMSG=@+', 'CHANMODES=b,k,l,imnpstrDdRcCPM', 'CASEMAPPING=rfc1459', 'NETWORK=UnderNet', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 251 frio :There are 4994 users and 13854 invisible on 38 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserclient, source: dallas.tx.us.undernet.org, target: frio, arguments: ['There are 4994 users and 13854 invisible on 38 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserclient
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 252 frio 39 :operator(s) online
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserop, source: dallas.tx.us.undernet.org, target: frio, arguments: ['39', 'operator(s) online'], tags: None
+DEBUG:irc.client:_dispatcher: luserop
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 253 frio 10 :unknown connection(s)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserunknown, source: dallas.tx.us.undernet.org, target: frio, arguments: ['10', 'unknown connection(s)'], tags: None
+DEBUG:irc.client:_dispatcher: luserunknown
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 254 frio 5653 :channels formed
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserchannels, source: dallas.tx.us.undernet.org, target: frio, arguments: ['5653', 'channels formed'], tags: None
+DEBUG:irc.client:_dispatcher: luserchannels
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 255 frio :I have 1473 clients and 1 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserme, source: dallas.tx.us.undernet.org, target: frio, arguments: ['I have 1473 clients and 1 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserme
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :Highest connection count: 2803 (2803 clients)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Highest connection count: 2803 (2803 clients)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 375 frio :- dallas.tx.us.undernet.org Message of the Day - 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motdstart, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- dallas.tx.us.undernet.org Message of the Day - '], tags: None
+DEBUG:irc.client:_dispatcher: motdstart
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 2026-2-28 12:00
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 2026-2-28 12:00'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- SPONSORED BY
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- SPONSORED BY'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888P"      "Y88b.    888     888        888    888    d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888P"      "Y88b.    888     888        888    888    d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888              "888    888     888    888 888    888   d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888              "888    888     888    888 888    888   d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-                           NETWORKS
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-                           NETWORKS'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- Dedicated / Colocation Solutions / Private Cloud and MORE
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- Dedicated / Colocation Solutions / Private Cloud and MORE'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-               Website: https://www.psychz.net/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-               Website: https://www.psychz.net/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The use of this server & network is a privilege,not a right.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The use of this server & network is a privilege,not a right.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The network operators may deny network access to anyone,
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The network operators may deny network access to anyone,'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- for any reason,at their sole discretion.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- for any reason,at their sole discretion.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- -= Welcome to dallas.tx.us.undernet.org =-
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- -= Welcome to dallas.tx.us.undernet.org =-'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########### Network Info ##############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########### Network Info ##############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-             WEBSITES
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-             WEBSITES'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Official Website: http://www.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Official Website: http://www.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Users Committee: http://www.user-com.undernet.org/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Users Committee: http://www.user-com.undernet.org/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Channel Services: http://cservice.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Channel Services: http://cservice.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########## Useful Channels ############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########## Useful Channels ############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Psychz : Our sponsor channel.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Psychz : Our sponsor channel.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #CService : Official X Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #CService : Official X Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Usernames : Usernames Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Usernames : Usernames Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Help : General IRC Questions / IRC Operator Assistance
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Help : General IRC Questions / IRC Operator Assistance'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Undernet : User-Com Chat Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Undernet : User-Com Chat Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Ayuda : Spanish help channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Ayuda : Spanish help channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      For Information regarding G-Lines / K-lines email abuse@undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      For Information regarding G-Lines / K-lines email abuse@undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ############ Server Guidelines ###########
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ############ Server Guidelines ###########'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No flooding channels, users, staff members, or spamming.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No flooding channels, users, staff members, or spamming.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No distribution of copyrighted material or pornography.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No distribution of copyrighted material or pornography.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No clones.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No clones.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No channel takeovers.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No channel takeovers.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No attempts to disrupt network services.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No attempts to disrupt network services.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No spamming and/or advertising.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No spamming and/or advertising.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No advertising other IRC networks
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No advertising other IRC networks'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 376 frio :End of /MOTD command.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofmotd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['End of /MOTD command.'], tags: None
+DEBUG:irc.client:_dispatcher: endofmotd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :on 1 ca 3(4) ft 10(10) tr
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['on 1 ca 3(4) ft 10(10) tr'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :frio!fria@hub.homegymstud.io JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: frio!fria@hub.homegymstud.io, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 353 frio = #pantasya :frio @fria
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: namreply, source: dallas.tx.us.undernet.org, target: frio, arguments: ['=', '#pantasya', 'frio @fria'], tags: None
+DEBUG:irc.client:_dispatcher: namreply
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 366 frio #pantasya :End of /NAMES list.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofnames, source: dallas.tx.us.undernet.org, target: frio, arguments: ['#pantasya', 'End of /NAMES list.'], tags: None
+DEBUG:irc.client:_dispatcher: endofnames
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: 1 john 1:1-10
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: 1 john 1:1-10'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: 1 John 1:1 -> That which was from the first, which has come to our ears, and which we have seen with our eyes, looking on it and touching it with our hands, about the Word of life
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: 1 John 1:2 -> (And the life was made clear to us, and we have seen it and are witnessing to it and giving you word of that eternal life which was with the Father and was seen by us);
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: 1 John 1:3 -> We give you word of all we have seen and everything which has come to our ears, so that you may be united with us; and we are united with the Father and with his Son Jesus Christ:
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: 1 John 1:4 -> And we are writing these things to you so that our joy may be made complete.
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: You can only display 4 passages at a time.
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: john3:16
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: john3:16'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: John 3:16 -> For God had such love for the world that he gave his only Son, so that whoever has faith in him may not come to destruction but have eternal life.
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: song1:1
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: song1:1'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Song of Solomon 1:1 -> The song of Songs, which is Solomon's.
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: gen1:1
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: gen1:1'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Genesis 1:1 -> At the first God made the heaven and the earth.
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: john3:16
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: john3:16'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: John 3:16 -> For God had such love for the world that he gave his only Son, so that whoever has faith in him may not come to destruction but have eternal life.
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :bible bot 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['bible bot '], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG frio :VERSION
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ctcp, source: sushi!sushi@sushi.users.undernet.org, target: frio, arguments: ['VERSION'], tags: None
+DEBUG:irc.client:_dispatcher: ctcp
+DEBUG:irc.client:TO SERVER: NOTICE sushi :VERSION Python irc.bot (20.5.0)
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :nice
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['nice'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :python yan gawa isang upuan lang walang AI
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['python yan gawa isang upuan lang walang AI'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :genesis1:1
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['genesis1:1'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :frio: genesis1:1
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['frio: genesis1:1'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :sushi: Genesis 1:1 -> At the first God made the heaven and the earth.
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :frio: romans 8:28
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['frio: romans 8:28'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :sushi: Romans 8:28 -> And we are conscious that all things are working together for good to those who have love for God, and have been marked out by his purpose.
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: gen1:1-4
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: gen1:1-4'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Genesis 1:1 -> At the first God made the heaven and the earth.
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Genesis 1:2 -> And the earth was waste and without form; and it was dark on the face of the deep: and the Spirit of God was moving on the face of the waters.
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Genesis 1:3 -> And God said, Let there be light: and there was light.
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: Genesis 1:4 -> And God, looking on the light, saw that it was good: and God made a division between the light and the dark,
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :park mo rin sa #eggdrop.ph
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['park mo rin sa #eggdrop.ph'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :galing ng python masmadali sa c
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['galing ng python masmadali sa c'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :ung bot
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['ung bot'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :single channel lang yan eh
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['single channel lang yan eh'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :ah ok
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['ah ok'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :anyway
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['anyway'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :you're welcome to test there
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ["you're welcome to test there"], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :salamat
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['salamat'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PRIVMSG #pantasya :bbl
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: ['bbl'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :walang tmux sa shell
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['walang tmux sa shell'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :nohup ginamit ko
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['nohup ginamit ko'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: wala! tulog! umalis!
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: wala! tulog! umalis!'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :sushi!sushi@sushi.users.undernet.org PART :#pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: part, source: sushi!sushi@sushi.users.undernet.org, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: part
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:connect(server='irc.undernet.org', port=6667, nickname='frio', ...)
+DEBUG:irc.client:TO SERVER: NICK frio
+DEBUG:irc.client:TO SERVER: USER frio 0 * :frio
+DEBUG:irc.client:process_forever(timeout=0.2)
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Looking up your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Looking up your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Checking Ident
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Checking Ident'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: PING :3185020481
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: 3185020481, arguments: ['3185020481'], tags: None
+DEBUG:irc.client:TO SERVER: PONG 3185020481
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Got ident response
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Got ident response'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Found your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Found your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 001 frio :Welcome to the UnderNet IRC Network, frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: welcome, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['Welcome to the UnderNet IRC Network, frio'], tags: None
+DEBUG:irc.client:_dispatcher: welcome
+DEBUG:irc.client:TO SERVER: JOIN #pantasya
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 002 frio :Your host is Miami.FL.US.Undernet.Org, running version u2.10.12.19
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: yourhost, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['Your host is Miami.FL.US.Undernet.Org, running version u2.10.12.19'], tags: None
+DEBUG:irc.client:_dispatcher: yourhost
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 003 frio :This server was created Fri Jan 14 2022 at 21:39:44 EST
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: created, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['This server was created Fri Jan 14 2022 at 21:39:44 EST'], tags: None
+DEBUG:irc.client:_dispatcher: created
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 004 frio Miami.FL.US.Undernet.Org u2.10.12.19 diOoswkgx biklmnopstvrDdRcC bklov
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: myinfo, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['Miami.FL.US.Undernet.Org', 'u2.10.12.19', 'diOoswkgx', 'biklmnopstvrDdRcC', 'bklov'], tags: None
+DEBUG:irc.client:_dispatcher: myinfo
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 005 frio WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=100 NICKLEN=12 :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['WHOX', 'WALLCHOPS', 'WALLVOICES', 'USERIP', 'CPRIVMSG', 'CNOTICE', 'SILENCE=25', 'MODES=6', 'MAXCHANNELS=40', 'MAXBANS=100', 'NICKLEN=12', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 005 frio MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcC CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['MAXNICKLEN=15', 'TOPICLEN=160', 'AWAYLEN=160', 'KICKLEN=160', 'CHANNELLEN=200', 'MAXCHANNELLEN=200', 'CHANTYPES=#&', 'PREFIX=(ov)@+', 'STATUSMSG=@+', 'CHANMODES=b,k,l,imnpstrDdRcC', 'CASEMAPPING=rfc1459', 'NETWORK=UnderNet', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 251 frio :There are 5329 users and 14097 invisible on 38 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserclient, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['There are 5329 users and 14097 invisible on 38 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserclient
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 252 frio 38 :operator(s) online
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserop, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['38', 'operator(s) online'], tags: None
+DEBUG:irc.client:_dispatcher: luserop
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 253 frio 8 :unknown connection(s)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserunknown, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['8', 'unknown connection(s)'], tags: None
+DEBUG:irc.client:_dispatcher: luserunknown
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 254 frio 5685 :channels formed
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserchannels, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['5685', 'channels formed'], tags: None
+DEBUG:irc.client:_dispatcher: luserchannels
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 255 frio :I have 1320 clients and 1 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserme, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['I have 1320 clients and 1 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserme
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org NOTICE frio :Highest connection count: 2085 (2084 clients)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['Highest connection count: 2085 (2084 clients)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 375 frio :- Miami.FL.US.Undernet.Org Message of the Day - 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motdstart, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- Miami.FL.US.Undernet.Org Message of the Day - '], tags: None
+DEBUG:irc.client:_dispatcher: motdstart
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 2022-8-20 12:48
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- 2022-8-20 12:48'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         Miami.FL.US.Undernet.Org SPONSORED BY
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         Miami.FL.US.Undernet.Org SPONSORED BY'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         .%%.......%%%%...%%%%%%..%%%%%%..%%%%%%..%%..%%..%%%%%...%%%%%%.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         .%%.......%%%%...%%%%%%..%%%%%%..%%%%%%..%%..%%..%%%%%...%%%%%%.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         .%%......%%..%%....%%......%%......%%....%%..%%..%%..%%..%%.....
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         .%%......%%..%%....%%......%%......%%....%%..%%..%%..%%..%%.....'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         .%%......%%%%%%....%%......%%......%%....%%..%%..%%..%%..%%%%...
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         .%%......%%%%%%....%%......%%......%%....%%..%%..%%..%%..%%%%...'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         .%%......%%..%%....%%......%%......%%....%%..%%..%%..%%..%%.....
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         .%%......%%..%%....%%......%%......%%....%%..%%..%%..%%..%%.....'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         .%%%%%%..%%..%%....%%....%%%%%%....%%.....%%%%...%%%%%...%%%%%%.SH
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         .%%%%%%..%%..%%....%%....%%%%%%....%%.....%%%%...%%%%%...%%%%%%.SH'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-         ................................................................
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-         ................................................................'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-             - Dedicated Server / DDoS Protection / Cloud and MORE -
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-             - Dedicated Server / DDoS Protection / Cloud and MORE -'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-                             - www.latitude.sh -
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-                             - www.latitude.sh -'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  Latitude.sh are a technology company committed to serving other companies with 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  Latitude.sh are a technology company committed to serving other companies with '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  cutting-edge internet infrastructure products that helps make the internet 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  cutting-edge internet infrastructure products that helps make the internet '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  faster and safer. Companies of all sizes use our platform to run their 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  faster and safer. Companies of all sizes use our platform to run their '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  applications and manage their business.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  applications and manage their business.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  latitude provides powerful, rock-solid hardware and a software platform that 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  latitude provides powerful, rock-solid hardware and a software platform that '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  delivers huge amounts of processing power and low latency at an unmatched level
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  delivers huge amounts of processing power and low latency at an unmatched level'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  of automation. We enable our clients to scale their systems as new needs arise,
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  of automation. We enable our clients to scale their systems as new needs arise,'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  always keeping in mind that our priority is to help them grow their businesses 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  always keeping in mind that our priority is to help them grow their businesses '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  so that we can grow ours.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  so that we can grow ours.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  That is why we only hire the very best people to operate our servers and to 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  That is why we only hire the very best people to operate our servers and to '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  serve our customers. We work with dedicated teams to maximize our clients IT 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  serve our customers. We work with dedicated teams to maximize our clients IT '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  workloads, from initial setup to every minute moving forward. And even though 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  workloads, from initial setup to every minute moving forward. And even though '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  our automation gives peace of mind to our clients, we make sure its always easy
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  our automation gives peace of mind to our clients, we make sure its always easy'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  to talk to someone.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  to talk to someone.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  -------- Disclaimer -----------------------------------------------------
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  -------- Disclaimer -----------------------------------------------------'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      The use of this server & network is a privilege, not a right.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      The use of this server & network is a privilege, not a right.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      The network operators may deny network access to anyone,
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      The network operators may deny network access to anyone,'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      for any reason, at their sole discretion.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      for any reason, at their sole discretion.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  -------- Server Guidelines ----------------------------------------------
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  -------- Server Guidelines ----------------------------------------------'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No flooding channels, users, staff members, or spamming.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No flooding channels, users, staff members, or spamming.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No distribution of copyrighted material or pornography.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No distribution of copyrighted material or pornography.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No clones.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No clones.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No channel takeovers.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No channel takeovers.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No attempts to disrupt network services.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No attempts to disrupt network services.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No spamming and/or advertising.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No spamming and/or advertising.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-     o No advertising other IRC networks
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-     o No advertising other IRC networks'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  -------- Useful Channels ------------------------------------------------
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  -------- Useful Channels ------------------------------------------------'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #latitude	: Our sponsor channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #latitude\t: Our sponsor channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #CService	: Official X Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #CService\t: Official X Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #Usernames : Usernames Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #Usernames : Usernames Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #Help	: General IRC Questions / IRC Operator Assistance
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #Help\t: General IRC Questions / IRC Operator Assistance'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #Undernet	: User-Com Chat Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #Undernet\t: User-Com Chat Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      #zT	: Help relating opless channel.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      #zT\t: Help relating opless channel.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-      For Information regarding G-Lines / K-lines email abuse@undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-      For Information regarding G-Lines / K-lines email abuse@undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-  -------- Useful Website ------------------------------------------------
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-  -------- Useful Website ------------------------------------------------'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-    o Official Website: http://www.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-    o Official Website: http://www.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-    o Users Committee: http://www.user-com.undernet.org/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-    o Users Committee: http://www.user-com.undernet.org/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 372 frio :-    o Channel Services: http://cservice.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['-    o Channel Services: http://cservice.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 376 frio :End of /MOTD command.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofmotd, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['End of /MOTD command.'], tags: None
+DEBUG:irc.client:_dispatcher: endofmotd
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org NOTICE frio :on 1 ca 1(4) ft 10(10) tr
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['on 1 ca 1(4) ft 10(10) tr'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :frio!fria@hub.homegymstud.io JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: frio!fria@hub.homegymstud.io, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 353 frio = #pantasya :@frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: namreply, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['=', '#pantasya', '@frio'], tags: None
+DEBUG:irc.client:_dispatcher: namreply
+DEBUG:irc.client:FROM SERVER: :Miami.FL.US.Undernet.Org 366 frio #pantasya :End of /NAMES list.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofnames, source: Miami.FL.US.Undernet.Org, target: frio, arguments: ['#pantasya', 'End of /NAMES list.'], tags: None
+DEBUG:irc.client:_dispatcher: endofnames
+DEBUG:irc.client:FROM SERVER: PING :Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: Miami.FL.US.Undernet.Org, arguments: ['Miami.FL.US.Undernet.Org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: Miami.FL.US.Undernet.Org, arguments: ['Miami.FL.US.Undernet.Org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: Miami.FL.US.Undernet.Org, arguments: ['Miami.FL.US.Undernet.Org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG Miami.FL.US.Undernet.Org
+DEBUG:irc.client:_dispatcher: ping
+Traceback (most recent call last):
+  File "/home/fria/bbe/./bot.py", line 3, in <module>
+    import irc.bot
+ModuleNotFoundError: No module named 'irc'
+Traceback (most recent call last):
+  File "/home/fria/bbe/./bot.py", line 3, in <module>
+    import irc.bot
+ModuleNotFoundError: No module named 'irc'
+DEBUG:irc.client:connect(server='irc.undernet.org', port=6667, nickname='frio', ...)
+DEBUG:irc.client:TO SERVER: NICK frio
+DEBUG:irc.client:TO SERVER: USER frio 0 * :frio
+DEBUG:irc.client:process_forever(timeout=0.2)
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Looking up your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Looking up your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Checking Ident
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Checking Ident'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: PING :1507227193
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: 1507227193, arguments: ['1507227193'], tags: None
+DEBUG:irc.client:TO SERVER: PONG 1507227193
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Found your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Found your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Got ident response
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Got ident response'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 001 frio :Welcome to the UnderNet IRC Network, frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: welcome, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Welcome to the UnderNet IRC Network, frio'], tags: None
+DEBUG:irc.client:_dispatcher: welcome
+DEBUG:irc.client:TO SERVER: JOIN #pantasya
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 002 frio :Your host is dallas.tx.us.undernet.org, running version u2.10.12.19
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: yourhost, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Your host is dallas.tx.us.undernet.org, running version u2.10.12.19'], tags: None
+DEBUG:irc.client:_dispatcher: yourhost
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 003 frio :This server was created Sat Feb 28 2026 at 11:54:39 EST
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: created, source: dallas.tx.us.undernet.org, target: frio, arguments: ['This server was created Sat Feb 28 2026 at 11:54:39 EST'], tags: None
+DEBUG:irc.client:_dispatcher: created
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 004 frio dallas.tx.us.undernet.org u2.10.12.19 diOoswkgx biklmnopstvrDdRcCPM bklov
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: myinfo, source: dallas.tx.us.undernet.org, target: frio, arguments: ['dallas.tx.us.undernet.org', 'u2.10.12.19', 'diOoswkgx', 'biklmnopstvrDdRcCPM', 'bklov'], tags: None
+DEBUG:irc.client:_dispatcher: myinfo
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=60 MAXBANS=100 NICKLEN=12 :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['WHOX', 'WALLCHOPS', 'WALLVOICES', 'USERIP', 'CPRIVMSG', 'CNOTICE', 'SILENCE=25', 'MODES=6', 'MAXCHANNELS=60', 'MAXBANS=100', 'NICKLEN=12', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 005 frio MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcCPM CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: dallas.tx.us.undernet.org, target: frio, arguments: ['MAXNICKLEN=15', 'TOPICLEN=160', 'AWAYLEN=160', 'KICKLEN=160', 'CHANNELLEN=200', 'MAXCHANNELLEN=200', 'CHANTYPES=#&', 'PREFIX=(ov)@+', 'STATUSMSG=@+', 'CHANMODES=b,k,l,imnpstrDdRcCPM', 'CASEMAPPING=rfc1459', 'NETWORK=UnderNet', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 251 frio :There are 5316 users and 14097 invisible on 38 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserclient, source: dallas.tx.us.undernet.org, target: frio, arguments: ['There are 5316 users and 14097 invisible on 38 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserclient
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 252 frio 38 :operator(s) online
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserop, source: dallas.tx.us.undernet.org, target: frio, arguments: ['38', 'operator(s) online'], tags: None
+DEBUG:irc.client:_dispatcher: luserop
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 253 frio 6 :unknown connection(s)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserunknown, source: dallas.tx.us.undernet.org, target: frio, arguments: ['6', 'unknown connection(s)'], tags: None
+DEBUG:irc.client:_dispatcher: luserunknown
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 254 frio 5689 :channels formed
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserchannels, source: dallas.tx.us.undernet.org, target: frio, arguments: ['5689', 'channels formed'], tags: None
+DEBUG:irc.client:_dispatcher: luserchannels
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 255 frio :I have 1623 clients and 1 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserme, source: dallas.tx.us.undernet.org, target: frio, arguments: ['I have 1623 clients and 1 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserme
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :Highest connection count: 2803 (2803 clients)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['Highest connection count: 2803 (2803 clients)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 375 frio :- dallas.tx.us.undernet.org Message of the Day - 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motdstart, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- dallas.tx.us.undernet.org Message of the Day - '], tags: None
+DEBUG:irc.client:_dispatcher: motdstart
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 2026-2-28 12:00
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 2026-2-28 12:00'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- SPONSORED BY
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- SPONSORED BY'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888b.   .d8888b. Y88b   d88P  .d8888b.  888    888 8888888888P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   Y88b d88P  Y88b Y88b d88P  d88P  Y88b 888    888       d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888    888 Y88b.       Y88o88P   888    888 888    888      d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888   d88P  "Y888b.     Y888P    888        8888888888     d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 8888888P"      "Y88b.    888     888        888    888    d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 8888888P"      "Y88b.    888     888        888    888    d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888              "888    888     888    888 888    888   d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888              "888    888     888    888 888    888   d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888        Y88b  d88P    888     Y88b  d88P 888    888  d88P'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- 888         "Y8888P"     888      "Y8888P"  888    888 d8888888888'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-                           NETWORKS
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-                           NETWORKS'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- Dedicated / Colocation Solutions / Private Cloud and MORE
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- Dedicated / Colocation Solutions / Private Cloud and MORE'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-               Website: https://www.psychz.net/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-               Website: https://www.psychz.net/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The use of this server & network is a privilege,not a right.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The use of this server & network is a privilege,not a right.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- The network operators may deny network access to anyone,
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- The network operators may deny network access to anyone,'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- for any reason,at their sole discretion.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- for any reason,at their sole discretion.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- -= Welcome to dallas.tx.us.undernet.org =-
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- -= Welcome to dallas.tx.us.undernet.org =-'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########### Network Info ##############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########### Network Info ##############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-             WEBSITES
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-             WEBSITES'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Official Website: http://www.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Official Website: http://www.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Users Committee: http://www.user-com.undernet.org/
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Users Committee: http://www.user-com.undernet.org/'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o Channel Services: http://cservice.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o Channel Services: http://cservice.undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ########## Useful Channels ############
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ########## Useful Channels ############'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Psychz : Our sponsor channel.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Psychz : Our sponsor channel.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #CService : Official X Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #CService : Official X Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Usernames : Usernames Help Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Usernames : Usernames Help Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Help : General IRC Questions / IRC Operator Assistance
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Help : General IRC Questions / IRC Operator Assistance'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Undernet : User-Com Chat Channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Undernet : User-Com Chat Channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      #Ayuda : Spanish help channel
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      #Ayuda : Spanish help channel'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :-      For Information regarding G-Lines / K-lines email abuse@undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['-      For Information regarding G-Lines / K-lines email abuse@undernet.org'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- ############ Server Guidelines ###########
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- ############ Server Guidelines ###########'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No flooding channels, users, staff members, or spamming.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No flooding channels, users, staff members, or spamming.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No distribution of copyrighted material or pornography.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No distribution of copyrighted material or pornography.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No clones.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No clones.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No channel takeovers.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No channel takeovers.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No attempts to disrupt network services.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No attempts to disrupt network services.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No spamming and/or advertising.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No spamming and/or advertising.'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- o No advertising other IRC networks
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- o No advertising other IRC networks'], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 372 frio :- 
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: motd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['- '], tags: None
+DEBUG:irc.client:_dispatcher: motd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 376 frio :End of /MOTD command.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofmotd, source: dallas.tx.us.undernet.org, target: frio, arguments: ['End of /MOTD command.'], tags: None
+DEBUG:irc.client:_dispatcher: endofmotd
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org NOTICE frio :on 1 ca 1(4) ft 10(10) tr
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: dallas.tx.us.undernet.org, target: frio, arguments: ['on 1 ca 1(4) ft 10(10) tr'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :frio!fria@hub.homegymstud.io JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: frio!fria@hub.homegymstud.io, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 353 frio = #pantasya :@frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: namreply, source: dallas.tx.us.undernet.org, target: frio, arguments: ['=', '#pantasya', '@frio'], tags: None
+DEBUG:irc.client:_dispatcher: namreply
+DEBUG:irc.client:FROM SERVER: :dallas.tx.us.undernet.org 366 frio #pantasya :End of /NAMES list.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofnames, source: dallas.tx.us.undernet.org, target: frio, arguments: ['#pantasya', 'End of /NAMES list.'], tags: None
+DEBUG:irc.client:_dispatcher: endofnames
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 PRIVMSG #pantasya :frio: 1cor1:1
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: pubmsg, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: ['frio: 1cor1:1'], tags: None
+DEBUG:irc.client:_dispatcher: pubmsg
+DEBUG:irc.client:TO SERVER: PRIVMSG #pantasya :fria: 1 Corinthians 1:1 -> Paul, an Apostle of Jesus Christ by the purpose of God, and Sosthenes the brother,
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: fria!~fria@112.206.69.28, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: :fria!~fria@112.206.69.28 QUIT :Quit: leaving
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: quit, source: fria!~fria@112.206.69.28, target: None, arguments: ['Quit: leaving'], tags: None
+DEBUG:irc.client:_dispatcher: quit
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: PING :dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: dallas.tx.us.undernet.org, arguments: ['dallas.tx.us.undernet.org'], tags: None
+DEBUG:irc.client:TO SERVER: PONG dallas.tx.us.undernet.org
+DEBUG:irc.client:_dispatcher: ping
+  File "/home/fria/bbe/./bot.py", line 33
+    """
+    ^^^
+IndentationError: expected an indented block after function definition on line 32
+Traceback (most recent call last):
+  File "/home/fria/bbe/./bot.py", line 3, in <module>
+    import irc.bot
+ModuleNotFoundError: No module named 'irc'
+DEBUG:irc.client:connect(server='irc.undernet.org', port=6667, nickname='frio', ...)
+DEBUG:irc.client:TO SERVER: NICK frio
+DEBUG:irc.client:TO SERVER: USER frio 0 * :frio
+DEBUG:irc.client:process_forever(timeout=0.2)
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Looking up your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Looking up your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Checking Ident
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Checking Ident'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: PING :673351335
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: ping, source: None, target: 673351335, arguments: ['673351335'], tags: None
+DEBUG:irc.client:TO SERVER: PONG 673351335
+DEBUG:irc.client:_dispatcher: ping
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Found your hostname
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Found your hostname'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: NOTICE AUTH :*** Got ident response
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: None, target: AUTH, arguments: ['*** Got ident response'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 001 frio :Welcome to the UnderNet IRC Network, frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: welcome, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['Welcome to the UnderNet IRC Network, frio'], tags: None
+DEBUG:irc.client:_dispatcher: welcome
+DEBUG:irc.client:TO SERVER: JOIN #pantasya
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 002 frio :Your host is Chicago.IL.US.Undernet.Org, running version u2.10.12.19
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: yourhost, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['Your host is Chicago.IL.US.Undernet.Org, running version u2.10.12.19'], tags: None
+DEBUG:irc.client:_dispatcher: yourhost
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 003 frio :This server was created Wed Apr 15 2020 at 22:02:43 UTC
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: created, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['This server was created Wed Apr 15 2020 at 22:02:43 UTC'], tags: None
+DEBUG:irc.client:_dispatcher: created
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 004 frio Chicago.IL.US.Undernet.Org u2.10.12.19 diOoswkgx biklmnopstvrDdRcC bklov
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: myinfo, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['Chicago.IL.US.Undernet.Org', 'u2.10.12.19', 'diOoswkgx', 'biklmnopstvrDdRcC', 'bklov'], tags: None
+DEBUG:irc.client:_dispatcher: myinfo
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 005 frio WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=100 NICKLEN=12 :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['WHOX', 'WALLCHOPS', 'WALLVOICES', 'USERIP', 'CPRIVMSG', 'CNOTICE', 'SILENCE=25', 'MODES=6', 'MAXCHANNELS=40', 'MAXBANS=100', 'NICKLEN=12', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 005 frio MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcC CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: featurelist, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['MAXNICKLEN=15', 'TOPICLEN=160', 'AWAYLEN=160', 'KICKLEN=160', 'CHANNELLEN=200', 'MAXCHANNELLEN=200', 'CHANTYPES=#&', 'PREFIX=(ov)@+', 'STATUSMSG=@+', 'CHANMODES=b,k,l,imnpstrDdRcC', 'CASEMAPPING=rfc1459', 'NETWORK=UnderNet', 'are supported by this server'], tags: None
+DEBUG:irc.client:_dispatcher: featurelist
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 251 frio :There are 5353 users and 14134 invisible on 38 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserclient, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['There are 5353 users and 14134 invisible on 38 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserclient
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 252 frio 40 :operator(s) online
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserop, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['40', 'operator(s) online'], tags: None
+DEBUG:irc.client:_dispatcher: luserop
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 253 frio 15 :unknown connection(s)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserunknown, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['15', 'unknown connection(s)'], tags: None
+DEBUG:irc.client:_dispatcher: luserunknown
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 254 frio 5659 :channels formed
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserchannels, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['5659', 'channels formed'], tags: None
+DEBUG:irc.client:_dispatcher: luserchannels
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 255 frio :I have 1935 clients and 1 servers
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: luserme, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['I have 1935 clients and 1 servers'], tags: None
+DEBUG:irc.client:_dispatcher: luserme
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org NOTICE frio :Highest connection count: 2939 (2938 clients)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['Highest connection count: 2939 (2938 clients)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 422 frio :MOTD File is missing
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: nomotd, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['MOTD File is missing'], tags: None
+DEBUG:irc.client:_dispatcher: nomotd
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org NOTICE frio :on 1 ca 1(4) ft 10(10)
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: privnotice, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['on 1 ca 1(4) ft 10(10)'], tags: None
+DEBUG:irc.client:_dispatcher: privnotice
+DEBUG:irc.client:FROM SERVER: :frio!fria@hub.homegymstud.io JOIN #pantasya
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: join, source: frio!fria@hub.homegymstud.io, target: #pantasya, arguments: [], tags: None
+DEBUG:irc.client:_dispatcher: join
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 353 frio = #pantasya :@frio
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: namreply, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['=', '#pantasya', '@frio'], tags: None
+DEBUG:irc.client:_dispatcher: namreply
+DEBUG:irc.client:FROM SERVER: :Chicago.IL.US.Undernet.Org 366 frio #pantasya :End of /NAMES list.
+DEBUG:irc.client:_dispatcher: all_raw_messages
+DEBUG:irc.client:command: endofnames, source: Chicago.IL.US.Undernet.Org, target: frio, arguments: ['#pantasya', 'End of /NAMES list.'], tags: None
+DEBUG:irc.client:_dispatcher: endofnames

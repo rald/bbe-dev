@@ -13,6 +13,7 @@ from Parser import Parser
 from Passage import Passage
 
 channel=None
+COMMAND_PREFIX='.'
 
 class TestBot(irc.bot.SingleServerIRCBot):
     def __init__(self, channel, nickname, server, port=6667):
@@ -29,19 +30,26 @@ class TestBot(irc.bot.SingleServerIRCBot):
         self.do_command(e, e.arguments[0])
 
     def on_pubmsg(self, c, e):
+        """
         a = e.arguments[0].split(":", 1)
         if len(a) > 1 and irc.strings.lower(a[0]) == irc.strings.lower(
             self.connection.get_nickname()
         ):
             self.do_command(e, a[1].strip())
         return
+        """
+
+        a = e.arguments[0]
+        if a[0]==COMMAND_PREFIX:
+            self.do_command(e,a[1:])
 
     def do_command(self, e, cmd):
         nick = e.source.nick
         c = self.connection
+        a=cmd.split(" ",1)
 
-        if cmd:
-            tokens=Lexer.lex(cmd)
+        if len(a)==2 and a[0]=="bbe":
+            tokens=Lexer.lex(a[1])
             cites=Parser(tokens).parse()
             passages=[]
             for cite in cites:
@@ -52,8 +60,6 @@ class TestBot(irc.bot.SingleServerIRCBot):
                 time.sleep(5)
             if len(passages)>4:
                 c.privmsg(self.channel, f"{nick}: You can only display 4 passages at a time.")
-        else:
-            c.notice(nick, "Not understood: " + cmd)
 
 def main():
 

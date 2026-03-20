@@ -5,7 +5,7 @@ root = tree.getroot()
 
 for book in root.findall("BIBLEBOOK"):
 
-	print(f"{book.get('bname')} {book.get('bsname')}")
+	print(f"{book.get('bname')} -> {book.get('bsname')}")
 
 	for chap in book.findall("CHAPTER"):
 		for vers in chap.findall("VERS"):

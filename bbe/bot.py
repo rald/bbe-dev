@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python3
 
 import irc.bot
 import irc.strings
@@ -37,36 +37,25 @@ class TestBot(irc.bot.SingleServerIRCBot):
         return
 
     def do_command(self, e, cmd):
-        global channel
-
         nick = e.source.nick
         c = self.connection
 
         if cmd:
-
             tokens=Lexer.lex(cmd)
-
             cites=Parser(tokens).parse()
-
             passages=[]
             for cite in cites:
                 if cite:
                     passages.extend(Passage.find(cite))
-
             for passage in passages[:4]:
-                c.privmsg(channel, f"{nick}: {passage}")
+                c.privmsg(self.channel, f"{nick}: {passage}")
                 time.sleep(5)
-
             if len(passages)>4:
-                c.privmsg(channel, f"{nick}: You can only display 4 passages at a time.")
-
+                c.privmsg(self.channel, f"{nick}: You can only display 4 passages at a time.")
         else:
             c.notice(nick, "Not understood: " + cmd)
 
-
 def main():
-
-    global channel
 
     logging.basicConfig(level=logging.DEBUG)
 
@@ -89,7 +78,6 @@ def main():
 
     bot = TestBot(channel, nickname, server, port)
     bot.start()
-
 
 if __name__ == "__main__":
     main()

@@ -69,6 +69,8 @@ class Parser:
         elif self.tokens[self.i].type==TokenType.DASH:
             self.i+=1
             return self.p6()
+        elif self.tokens[self.i].type==TokenType.EOF:
+            return self.p99()
         return None
 
     def p2(self):

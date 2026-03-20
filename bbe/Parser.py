@@ -51,7 +51,7 @@ class Parser:
         if self.tokens[self.i].type==TokenType.DASH:
             self.i+=1
             return self.p7()
-        elif self.tokens[self.i].type==TokenType.EOF:
+        else:
             return self.p99()
         return None
 
@@ -69,7 +69,7 @@ class Parser:
         elif self.tokens[self.i].type==TokenType.DASH:
             self.i+=1
             return self.p6()
-        elif self.tokens[self.i].type==TokenType.EOF:
+        else:
             return self.p99()
         return None
 
@@ -98,7 +98,7 @@ class Parser:
         cites=[]
         n=len(self.tokens)
 
-        while self.i<n:
+        while self.tokens[self.i].type!=TokenType.EOF:
 
             cite=self.p1()
             if cite:
@@ -109,8 +109,6 @@ class Parser:
             self.ecnum=None
             self.svnum=None
             self.evnum=None
-
-            self.i+=1
 
         return cites
 
